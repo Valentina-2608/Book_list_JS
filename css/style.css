@@ -1,11 +1,13 @@
 /* Styles */
 
 
-.main{width:1000px;
+.main{
+width:1000px;
 height:1200px;
 background-color:#EAF6F6;
 margin: 0 auto;
-position:relative;}
+position:relative;
+}
 
 .caption{
 width:1000px;
@@ -18,4 +20,25 @@ padding:20px;
 text-align:center;
 font-size:42px;
 font-style:italic;
-font-weight:bold;}
+font-weight:bold;
+}
+
+.add_book{
+width:960px;
+height:50px;
+position:absolute;
+top:120px;
+}
+
+#add_new_book{
+width:180px;
+height:50px;
+margin-left:430px;
+font-size:20px;
+color:white;
+background-color:#FF0063;
+border:none;
+border-radius:10px;
+cursor:pointer;
+box-shadow:5px 5px 10px white;
+}
