@@ -121,6 +121,51 @@ margin-top:20px;}
 
 
 
+/* Element book */
+.book{width:940px;
+height:100px;
+margin-top:20px;
+border:1px solid #ECD5BB;
+border-radius:10px;
+margin-left:30px;}
+
+.book_id{width:5px;
+height:5px;
+padding:20px;
+float:left;
+color:black;}
+
+.book_title{width:150px;
+height:80px;
+padding:20px;
+float:left;
+color:darkgreen;
+word-break: break-all;}
 
 
+.book_description{width:480px;
+height:80px;
+padding:20px;
+float:left;
+color:black;
+word-break: break-all;}
 
+
+.remove_btn{width:80px;
+height:30px;
+margin-top:20px;
+border-radius:5px;
+background-color:#FF0063;
+color:white;
+border:none;
+cursor:pointer;}
+
+.check_btn{width:80px;
+height:30px;
+margin-top:20px;
+border-radius:5px;
+background-color:darkgreen;
+margin-left:10px;
+color:white;
+border:none;
+cursor:pointer;}
