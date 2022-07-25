@@ -5,8 +5,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="books.js"></script>
+	<script src="script.js"></script>
 </head>
-<body>
+<body onload = "load()">
 <div class="main">
 <div class="caption">Book list</div>
 <div class="add_book">
@@ -18,7 +20,7 @@
 	<h2>Add new book</h2>
 
 	<form>
-	<input class="title" placeholder="Enter title of the book." size="40">
+		<input class="title" placeholder="Enter title of the book." size="40">
 		<textarea class="description" placeholder="Enter description of the book. The description must contains 50 or more symbols." rows="7" cols="38"></textarea>
 		<button  type="submit" id="add">Add book</button>
 	</form>
