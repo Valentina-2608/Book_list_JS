@@ -1,8 +1,53 @@
 /* Script */
 
 
+/* Creating new element */
+
+function createBook(elem, elem_id, elem_title, elem_desription){
+let parent1 = document.getElementById('books');	
+	let new_book = document.createElement('div');
+	new_book.classList.add('book');
+	parent1.appendChild(new_book);
+	
+	/* Add id */
+	let book_id = document.createElement('div');
+	book_id.classList.add('book_id');
+	book_id.innerHTML = elem_id;
+	new_book.appendChild(book_id);
+	
+	/* Add title */
+	let book_title = document.createElement('div');
+	book_title.classList.add('book_title');
+	book_title.innerHTML = elem_title;
+	new_book.appendChild(book_title);
+	
+	/* Add description */
+	let book_description = document.createElement('div');
+	book_description.classList.add('book_description');
+	book_description.innerHTML = elem_desription;
+	new_book.appendChild(book_description);
+	
+	/* Add button remove */
+	let remove_btn = document.createElement('button');
+	remove_btn.classList.add('remove_btn');
+	remove_btn.innerHTML = 'Delete';
+	new_book.appendChild(remove_btn);
+	
+	/* Add button check */
+	let check_btn = document.createElement('button');
+	check_btn.classList.add('check_btn');
+	check_btn.innerHTML = 'Check';
+	new_book.appendChild(check_btn);
+	
+}	
+
+
+
+
 /* function load */
 function load(){
 	let mybooks = JSON.parse(books);
-	console.log(books);
+	for(let book of mybooks){
+	 createBook(book, book.id, book.title, book.description)
+}
 }
