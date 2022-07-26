@@ -70,7 +70,6 @@ function closeModal(){
 let form_book = document.querySelector('form');
 let title =  document.querySelector('.title');
 let description =  document.querySelector('.description');
-let add =  document.getElementById('add');
 
 
 function validationTitle(data){
