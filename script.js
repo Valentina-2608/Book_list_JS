@@ -66,17 +66,64 @@ function closeModal(){
 
 
 
+/* Form validation */
+let form_book = document.querySelector('form');
+let title =  document.querySelector('.title');
+let description =  document.querySelector('.description');
+let add =  document.getElementById('add');
+
+
+function validationTitle(data){
+	return data.length >= 5;
+}
+
+function validationDescription(data){
+	return data.length >= 50;
+}
+
+title.addEventListener('input', function(event){
+	const elem = event.target;
+	if (!validationTitle(elem.value)){
+		elem.classList.add('error');
+	}else {
+		elem.classList.remove('error');
+	}
+});
+
+
+description.addEventListener('input', function(event){
+	const elem = event.target;
+	if (!validationDescription(elem.value)){
+		elem.classList.add('error');
+	}else{
+		elem.classList.remove('error');
+	}
+});
 
 
 
-
-
-
-
-
-
-
-
-
+form_book.addEventListener('submit', function(event){
+event.preventDefault();
+	
+let titleData = title.value;
+let descriptionData = description.value;
+let isTitleValid = validationTitle(titleData);
+let isDescriptionValid = validationDescription(descriptionData);
+let bookData = 0;
+let book_id = document.querySelectorAll('.book_id');
+for(let elem of book_id){
+	bookData = +elem.innerHTML;
+}
+if ( isTitleValid && isDescriptionValid){
+	bookData++;
+	createBook(form_book, bookData, titleData, descriptionData);
+	setTimeout(() => {title.value = '';
+	description.value = ''},
+	1000);
+}else{
+	alert('Title must contains minimum 5 symbols, description must contains minimum 50 symbols');
+}
+	
+});
 
 }
