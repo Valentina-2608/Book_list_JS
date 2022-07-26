@@ -39,6 +39,22 @@ function createBook(elem, elem_id, elem_title, elem_desription){
 	check_btn.innerHTML = 'Check';
 	new_book.appendChild(check_btn);
 	
+	
+	/* Remove book */
+	remove_btn.addEventListener('click', function(event) {
+	new_book.parentElement.removeChild(new_book);
+	event.preventDefault();
+	});
+	
+	
+	/* Check book */
+	check_btn.addEventListener('click',function(event){
+		book_description.classList.toggle('check_book');
+	});
+	
+	
+
+	
 }	
 
 
