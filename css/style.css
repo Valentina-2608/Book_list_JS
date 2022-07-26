@@ -169,3 +169,8 @@ margin-left:10px;
 color:white;
 border:none;
 cursor:pointer;}
+
+.check_book{
+text-decoration:line-through;
+}
+
