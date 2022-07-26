@@ -1,3 +1,176 @@
 /* Styles */
 
 
+.main{
+width:1000px;
+height:1200px;
+background-color:#EAF6F6;
+margin: 0 auto;
+position:relative;
+}
+
+.caption{
+width:1000px;
+height:80px;	
+position:absolute;
+top:0px;
+left:0px;
+color:darkgreen;
+padding:20px;
+text-align:center;
+font-size:42px;
+font-style:italic;
+font-weight:bold;
+}
+
+.add_book{
+width:960px;
+height:50px;
+position:absolute;
+top:120px;
+}
+
+#add_new_book{
+width:180px;
+height:50px;
+margin-left:430px;
+font-size:20px;
+color:white;
+background-color:#FF0063;
+border:none;
+border-radius:10px;
+cursor:pointer;
+box-shadow:5px 5px 10px white;
+}
+
+
+#books{width:980px;
+height:700px;
+position:absolute;
+top:250px;
+left:0px;
+}
+
+
+/* Modal */
+#modal{width:400px;
+height:400px;
+background-color:white;
+position:absolute;
+z-index:3;
+top:90px;
+left:300px;
+box-shadow:5px 5px 10px gray;
+display:none;
+animation:effects 2s linear;}
+
+
+@-webkit-keyframes effects {
+    0%{opacity:0;}
+	25%{opacity:0.25;}
+    50%{opacity:0.5;}
+	75%{opacity:0.75;}
+	100%{opacity:1;}
+}
+
+@keyframes effects {
+    0%{opacity:0;}
+	25%{opacity:0.25;}
+    50%{opacity:0.5;}
+	75%{opacity:0.75;}
+	100%{opacity:1;}
+}
+
+
+
+.close_modal{
+font-size:20px;
+font-weight:bold;
+margin-left:380px;
+cursor:pointer;}
+
+#modal h2{
+text-align:center;}
+
+form{margin-left:50px;}
+
+.title{height:30px;
+margin-bottom:20px;
+border-radius:5px;
+border:1px solid gray;}
+
+.description{
+border-radius:5px;
+border:1px solid gray;}
+
+
+#add{
+width:100px;
+height:30px;	
+margin-left:100px;
+border-radius:5px;
+border:none;
+background-color:#006256;
+color:white;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;}
+
+
+.error{border:1px solid red;}
+
+
+
+/* Element book */
+.book{width:940px;
+height:100px;
+margin-top:20px;
+border:1px solid #ECD5BB;
+border-radius:10px;
+margin-left:30px;}
+
+.book_id{width:5px;
+height:5px;
+padding:20px;
+float:left;
+color:black;}
+
+.book_title{width:150px;
+height:80px;
+padding:20px;
+float:left;
+color:darkgreen;
+word-break: break-all;}
+
+
+.book_description{width:480px;
+height:80px;
+padding:20px;
+float:left;
+color:black;
+word-break: break-all;}
+
+
+.remove_btn{width:80px;
+height:30px;
+margin-top:20px;
+border-radius:5px;
+background-color:#FF0063;
+color:white;
+border:none;
+cursor:pointer;}
+
+.check_btn{width:80px;
+height:30px;
+margin-top:20px;
+border-radius:5px;
+background-color:darkgreen;
+margin-left:10px;
+color:white;
+border:none;
+cursor:pointer;}
+
+.check_book{
+text-decoration:line-through;
+}
+
