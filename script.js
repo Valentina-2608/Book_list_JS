@@ -4,7 +4,7 @@
 /* Creating new element */
 
 function createBook(elem, elem_id, elem_title, elem_desription){
-let parent1 = document.getElementById('books');	
+	let parent1 = document.getElementById('books');	
 	let new_book = document.createElement('div');
 	new_book.classList.add('book');
 	parent1.appendChild(new_book);
@@ -48,6 +48,35 @@ let parent1 = document.getElementById('books');
 function load(){
 	let mybooks = JSON.parse(books);
 	for(let book of mybooks){
-	 createBook(book, book.id, book.title, book.description)
+	 	createBook(book, book.id, book.title, book.description)
 }
+
+/* Show and close modal */;
+let modal= document.getElementById('modal');
+let close_modal = document.querySelector('.close_modal');
+let add_new_book = document.getElementById('add_new_book');
+add_new_book.addEventListener('click', showModal);
+function showModal(){
+	modal.style.display = "block";
+}
+close_modal.addEventListener('click', closeModal);
+function closeModal(){
+	modal.style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
